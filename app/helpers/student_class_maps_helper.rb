@@ -1,0 +1,2 @@
+module StudentClassMapsHelper
+end

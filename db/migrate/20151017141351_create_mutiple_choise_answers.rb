@@ -1,0 +1,12 @@
+class CreateMutipleChoiseAnswers < ActiveRecord::Migration
+  def change
+    create_table :mutiple_choise_answers do |t|
+      t.references :test_question, index: true, foreign_key: true
+      t.text :answer
+      t.boolean :is_correct_answer
+      t.string :position
+
+      t.timestamps null: false
+    end
+  end
+end
